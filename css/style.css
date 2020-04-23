@@ -7,3 +7,9 @@
 body {
     background: #00A368;
 }
+
+#field {
+    display: block;
+    margin: 0 auto;
+    border-top: 3px solid white;
+}
