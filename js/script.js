@@ -54,3 +54,37 @@ class Boll {
         ctx.fill()
     }
 }
+
+Boll.initialSpeed = 4
+Boll.color = '00ff00'
+Boll.radius = 5
+
+const core = () => {
+
+}
+
+const renderScore = (ctx, {
+    player1,
+    player2
+}) => {
+    ctx.fillStyle = 'red'
+    ctx.textAlign = 'center'
+    ctx.font = '35px Comic Sans MS'
+    ctx.fillText('${player1}:${player2}', fieldWidth / 2, 50)
+}
+
+const render = (ctx, pong) => {
+    const {
+        player1,
+        player2,
+        boll,
+        score,
+    } = pong
+
+    core(pong)
+
+    boll.y += 1
+    boll.x += 1
+
+    ctx.clearRect(0, 0, fieldWidth, fieldHeight)
+}
