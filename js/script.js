@@ -147,7 +147,7 @@ const renderScore = (ctx, {
     player1,
     player2
 }) => {
-    ctx.fillStyle = 'white'
+    ctx.fillStyle = 'black'
     ctx.textAlign = 'center'
     ctx.font = '50px Tahoma'
     ctx.fillText(`${player1}:${player2}`, fieldWidth / 2, 50)
