@@ -105,11 +105,14 @@ window.onload = () => {
             player2: 0
         },
     }
+
+
+    addEventListener(
+        'keydown',
+        (e) => {
+
+        }
+    )
+
+    render(ctx, pong)
 }
-
-addEventListener(
-    'keydown',
-    (e) => {
-
-    }
-)
