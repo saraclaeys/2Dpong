@@ -20,7 +20,7 @@ class Platform {
 
 Platform.width = 10
 Platform.height = 100
-Platform.color = '#ff0000'
+Platform.color = '#fff'
 Platform.speed = 20
 
 class Player extends Platform {
@@ -77,9 +77,9 @@ class Boll {
     }
 }
 
-Boll.initialSpeed = 4
-Boll.color = '#00ff00'
-Boll.radius = 5
+Boll.initialSpeed = 3
+Boll.color = '#fff'
+Boll.radius = 10
 
 const core = (pong) => {
     const {
@@ -147,9 +147,9 @@ const renderScore = (ctx, {
     player1,
     player2
 }) => {
-    ctx.fillStyle = 'red'
+    ctx.fillStyle = 'white'
     ctx.textAlign = 'center'
-    ctx.font = '35px Comic Sans MS'
+    ctx.font = '50px Tahoma'
     ctx.fillText(`${player1}:${player2}`, fieldWidth / 2, 50)
 }
 
