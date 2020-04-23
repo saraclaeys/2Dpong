@@ -18,8 +18,8 @@ class Platform {
     }
 }
 
-Platform.width = 10
-Platform.height = 100
+Platform.width = 15
+Platform.height = 120
 Platform.color = '#fff'
 Platform.speed = 20
 
