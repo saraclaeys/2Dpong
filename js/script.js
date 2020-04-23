@@ -88,3 +88,28 @@ const render = (ctx, pong) => {
 
     ctx.clearRect(0, 0, fieldWidth, fieldHeight)
 }
+
+window.onload = () => {
+    const canvas = document.getElementById('field')
+    const ctx = canvas.getContext('2d')
+
+    const player1 = new player()
+    const player2 = new player()
+
+    const pong = {
+        player1,
+        player2,
+        boll: new Boll(),
+        score: {
+            player1: 0,
+            player2: 0
+        },
+    }
+}
+
+addEventListener(
+    'keydown',
+    (e) => {
+
+    }
+)
