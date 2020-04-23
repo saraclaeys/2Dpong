@@ -87,6 +87,12 @@ const render = (ctx, pong) => {
     boll.x += 1
 
     ctx.clearRect(0, 0, fieldWidth, fieldHeight)
+
+    renderScore(ctx, score)
+
+    player1.draw(ctx)
+    player2.draw(ctx)
+    boll.draw(ctx)
 }
 
 window.onload = () => {
